@@ -43,6 +43,7 @@
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
@@ -66,6 +67,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Calculator.feature</DependentUpon>
     </Compile>
+    <Compile Include="CalculatorPage.cs" />
     <Compile Include="CalculatorSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
