@@ -17,6 +17,13 @@ namespace specflow_selenium_calculator
             FluentAutomation.Settings.DefaultWaitUntilTimeout = new TimeSpan(0, 0, 3);
 	}
 
+	[AfterScenario()]
+	public void AfterScenario()
+	{
+	    if (_calculator != null)
+	        _calculator.Dispose();
+	}
+
         [Given(@"I have opened the calculator")]
         public void GivenIHaveOpenedTheCalculator()
         {
